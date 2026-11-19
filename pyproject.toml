@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-cassette"
+version = "0.1.0"
+description = "Record LLM API traffic once and replay it forever: deterministic, offline, free tests."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Srinikhil Chakilam" }]
+keywords = ["llm", "testing", "vcr", "cassette", "agents", "record-replay"]
+dependencies = []
+
+[project.scripts]
+llm-cassette = "llm_cassette:main"
+
+[project.urls]
+Homepage = "https://github.com/rawqubit/llm-cassette"
+Issues = "https://github.com/rawqubit/llm-cassette/issues"
+
+[tool.setuptools]
+py-modules = ["llm_cassette"]

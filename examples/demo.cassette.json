@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "generator": "llm-cassette 0.1.0",
+  "upstream": "stub://demo-model",
+  "created_at": "2026-11-19T08:29:46Z",
+  "entries": [
+    {
+      "key": "b8c6244ec93746cddf03535dca1c456fa830f2c5f7eb9448f1dbb1171a73ae2b",
+      "method": "POST",
+      "path": "/v1/chat/completions",
+      "request": {
+        "headers": {
+          "Accept-Encoding": "identity",
+          "Content-Length": "188",
+          "Host": "127.0.0.1:45657",
+          "User-Agent": "Python-urllib/3.12",
+          "Content-Type": "application/json",
+          "Connection": "close"
+        },
+        "body": "{\"model\": \"gpt-5\", \"messages\": [{\"role\": \"system\", \"content\": \"You are a support agent for an online store. Answer in one sentence.\"}, {\"role\": \"user\", \"content\": \"Where is order 4471?\"}]}"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Server": "BaseHTTP/0.6 Python/3.12.3",
+          "Date": "Thu, 19 Nov 2026 08:29:46 GMT",
+          "Content-Type": "application/json",
+          "Content-Length": "317"
+        },
+        "body": "{\"id\": \"chatcmpl-demo\", \"object\": \"chat.completion\", \"model\": \"gpt-5\", \"choices\": [{\"index\": 0, \"message\": {\"role\": \"assistant\", \"content\": \"Your order 4471 left the warehouse this morning and arrives Thursday.\"}, \"finish_reason\": \"stop\"}], \"usage\": {\"prompt_tokens\": 42, \"completion_tokens\": 18, \"total_tokens\": 60}}",
+        "stream": false
+      },
+      "meta": {
+        "model": "gpt-5",
+        "messages": 2,
+        "recorded_at": "2026-11-19T08:29:46Z"
+      }
+    },
+    {
+      "key": "21091c1a18d3f77ad428ae7e4bbcfd1ce40a3d9b9c2d0dd33336e395cec734ed",
+      "method": "POST",
+      "path": "/v1/chat/completions",
+      "request": {
+        "headers": {
+          "Accept-Encoding": "identity",
+          "Content-Length": "362",
+          "Host": "127.0.0.1:45657",
+          "User-Agent": "Python-urllib/3.12",
+          "Content-Type": "application/json",
+          "Connection": "close"
+        },
+        "body": "{\"model\": \"gpt-5\", \"messages\": [{\"role\": \"system\", \"content\": \"You are a support agent for an online store. Answer in one sentence.\"}, {\"role\": \"user\", \"content\": \"Where is order 4471?\"}, {\"role\": \"assistant\", \"content\": \"Your order 4471 left the warehouse this morning and arrives Thursday.\"}, {\"role\": \"user\", \"content\": \"Can I change the delivery address?\"}]}"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Server": "BaseHTTP/0.6 Python/3.12.3",
+          "Date": "Thu, 19 Nov 2026 08:29:46 GMT",
+          "Content-Type": "application/json",
+          "Content-Length": "273"
+        },
+        "body": "{\"id\": \"chatcmpl-demo\", \"object\": \"chat.completion\", \"model\": \"gpt-5\", \"choices\": [{\"index\": 0, \"message\": {\"role\": \"assistant\", \"content\": \"I do not have that order.\"}, \"finish_reason\": \"stop\"}], \"usage\": {\"prompt_tokens\": 42, \"completion_tokens\": 18, \"total_tokens\": 60}}",
+        "stream": false
+      },
+      "meta": {
+        "model": "gpt-5",
+        "messages": 4,
+        "recorded_at": "2026-11-19T08:29:46Z"
+      }
+    }
+  ]
+}
