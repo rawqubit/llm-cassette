@@ -1,5 +1,7 @@
 # llm-cassette
 
+[![CI](https://github.com/rawqubit/llm-cassette/actions/workflows/ci.yml/badge.svg)](https://github.com/rawqubit/llm-cassette/actions/workflows/ci.yml) [![license](https://img.shields.io/badge/license-MIT-56d3a6)](https://github.com/rawqubit/llm-cassette/blob/main/LICENSE) [![python](https://img.shields.io/badge/python-3.9%2B-3776ab)](https://github.com/rawqubit/llm-cassette)
+
 **Your agent tests should not cost money.**
 
 Record one real LLM session through a local proxy, commit the cassette, and every later test run replays byte-identical responses with no network, no tokens, and no flakiness.
@@ -9,6 +11,7 @@ llm-cassette record --cassette tests/cassettes/support.json --upstream https://a
 OPENAI_BASE_URL=http://127.0.0.1:8787/v1 pytest tests/
 
 llm-cassette replay --cassette tests/cassettes/support.json &
+pip install -e '.[dev]'   # pytest only
 OPENAI_BASE_URL=http://127.0.0.1:8787/v1 pytest tests/   # offline, deterministic, free
 ```
 

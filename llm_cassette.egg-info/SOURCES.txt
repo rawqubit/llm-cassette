@@ -1,0 +1,10 @@
+LICENSE
+README.md
+llm_cassette.py
+pyproject.toml
+llm_cassette.egg-info/PKG-INFO
+llm_cassette.egg-info/SOURCES.txt
+llm_cassette.egg-info/dependency_links.txt
+llm_cassette.egg-info/entry_points.txt
+llm_cassette.egg-info/top_level.txt
+tests/test_llm_cassette.py

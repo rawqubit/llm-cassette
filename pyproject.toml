@@ -13,6 +13,9 @@ authors = [{ name = "Srinikhil Chakilam" }]
 keywords = ["llm", "testing", "vcr", "cassette", "agents", "record-replay"]
 dependencies = []
 
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
 [project.scripts]
 llm-cassette = "llm_cassette:main"
 

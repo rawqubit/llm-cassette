@@ -1,0 +1,2 @@
+[console_scripts]
+llm-cassette = llm_cassette:main
